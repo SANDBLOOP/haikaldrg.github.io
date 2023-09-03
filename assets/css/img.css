@@ -1,0 +1,24 @@
+/* Gaya untuk tampilan gambar dalam mode layar penuh */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Latar belakang hitam semi-transparan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Menempatkan gambar di atas elemen lain */
+    cursor: pointer; /* Kursor akan menjadi tanda panah ketika gambar ditampilkan */
+  }
+  
+  .fullscreen img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Menjaga aspek gambar saat diperbesar */
+  }
+    /* Tambahkan gaya untuk tombol Kembali */
+    .hidden {
+        display: none;
+    }  
